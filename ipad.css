@@ -1,0 +1,41 @@
+@media screen and  (min-width: 600px) and (max-width: 739px) {
+}
+
+
+@media screen and  (min-width: 740px) and (max-width: 1023px) {
+        .language-title {
+            display: none;
+        }
+
+        ul.list li a::after {
+            display: none;
+        }
+        ul.list li{
+            height: 5rem;
+        }
+
+        .content-title{
+            margin-left: 7rem;
+        }
+    
+        .sub-team .content-header{
+            margin-left: 0;
+        }
+        .sub-team .content-title{
+            margin-left: 6rem;
+        }
+
+
+    
+        .title-coach{
+            font-size: 1rem;
+        }
+        .coach .coach-container {
+            top: 0;
+        }
+
+        
+}
+
+
+

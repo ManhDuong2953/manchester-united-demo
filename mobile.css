@@ -1,0 +1,218 @@
+@media screen and (max-width: 320px) {
+    /* ul.list li {
+        display: none;
+    } */
+    .header-item--2 {
+        display: none;
+    }
+    .wide{
+        width: auto;
+    }
+
+    .coach-container h2.title-coach {
+        font-size: 1rem;
+        top: -3rem;
+    }
+
+    .coach-container .title-coach::after {
+        height: 0.2rem;
+    }
+
+    
+    .header-item--1 .list{
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        animation: listout 0.6s ease;
+        align-items: flex-end;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 321px) and (max-width: 739px) {
+    /* Như đã nói ở trên thì pần wide này chỉ đi với grid nhưng grid là thuộc tính cứng trên mọi thiết bị nên chỉ cần thay đổi wide là được */
+    .wide {
+        width: auto;
+    }
+    .wide .row {
+        margin: 0 -8px;
+    }
+    /* .list li:nth-child(1),
+    .list li:nth-child(6),
+    .list li:nth-child(3),
+    .list li:nth-child(4),
+    .list li:nth-child(5) {
+        display: none;
+    } */
+    ul.list li:nth-child(2) {
+        display: flex;
+        justify-self: center;
+    }
+    ul.list li:nth-child(2) a {
+        line-height: 4rem;
+    }
+    ul.list li:nth-child(2) a::after {
+        display: none;
+    }
+    .header-item--2 {
+        display: none;
+    }
+
+    .coach .coach-container {
+        top: -2rem;
+    }
+    
+    
+
+    .coach-container h2.title-coach {
+        font-size: 1.5rem;
+        position: relative;
+        color: wheat;
+    }
+
+    .coach .coach-container {
+        top: -2rem;
+    }
+    .coach-container .title-coach::after {
+        height: 0.2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 739px) {
+    .content-title{
+        margin-left: 0;
+    }
+
+    .content-list,
+    .content-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-team .content-header{
+        margin-left: 0;
+    }
+
+    
+    .coach h2,
+    .coach p{
+        font-size: 0.5rem;
+    }
+
+    .column--1{
+        flex-direction: column;
+    }
+
+    .new-container{
+        padding: 1rem;
+    }
+    .nav_mobile{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* .nav_mobile i.fa-solid.fa-bars{
+        color: #ffcccc;
+        position: absolute;
+        font-size: 1.3rem;
+        line-height: 5rem;
+        cursor: pointer;
+        right: 2rem;
+    } */
+
+    .nav_mobile i.fa-solid.fa-bars {
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        border-radius: 5rem;
+        font-size: 1.3rem;
+        /* transform: translateY(85vh);
+         */
+         transform: translate3d(45%, 673%,0);
+        cursor: pointer;
+        right: 0.5rem;
+        opacity: 0.3;
+        padding: 1.5rem;
+        color: white;
+        transition: all 0.5s cubic-bezier(0, 0, 0, 1.01);
+    }
+
+    .nav_mobile i.fa-solid.fa-bars:hover{
+        opacity: 8;
+        transform: translate3d(-34%, 673%,0);
+        color: black;
+    }
+    
+
+    .header-item--1 .list{
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        z-index: 1;
+        animation: listout 0.6s ease;
+        align-items: flex-end;
+    }
+
+    .nav.header-item--1 .list{
+        display: flex;
+    }
+
+
+    .nav.header-item--1 .list li{
+        width: 50vw;
+        background-color: black;
+    }
+    ul.list li a::after {
+        display: none;
+    }
+
+    .li_mobile{
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 0.4rem 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: relative;
+        display: block;
+
+    }
+
+    .li_mobile a{
+        color: #ffcccc;
+            line-height: 4rem;
+        
+    }
+    ul.list li:nth-child(1){
+        margin-top: 3rem;
+    }
+
+
+    
+    ul.list li:hover a {
+        color: white;
+    }
+
+    @keyframes listout {
+        from{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+}

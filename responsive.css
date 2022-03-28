@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 100%;
+    display: block;  /* để cho mọi thẻ có thể chiếm hết cả màn hình( ngoài thẻ div ra thì còn nhiều thẻ như a,p,...không thể chiếm hêt màn hình) */
+    margin: 0 auto;
+}
+
+.grid.wide{
+    max-width: 1200px;
+}
+
